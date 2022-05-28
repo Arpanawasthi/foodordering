@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Online food ordering wesite</title>
+    <link rel="stylesheet" href="abc.css">
+    <link rel="stylesheet" media="screen and (max-width: 1170px )" href="phone.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body>
+    <nav id="navbar">
+<div id="logo">
+    <img src="img/foodlogo2-removebg-preview.png" alt="online food order" width="50" height="50">
+</div>
+  
+ <ul>
+       <li class="item"><a href="#home">home</a></li>
+       <li class="item"><a href="#services-container">services</a></li>
+       <li class="item"><a href="#client-section">Sponsored by</a></li>
+       <li class="item"><a href="#contact">contact us</a></li>        
+ </ul>
+    </nav>
+    <section id="home">
+        <h1 class="h-primary"> welcome to my meal</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.  praesentium? Atque autem rem labore fugiat sapiente nulla! Sit, maxime culpa.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore reiciendis, assumenda possimus debitis exercitationem molestias.</p>
+        <button class="btn">order  now </button>
+    </section>
+    <section id="services-container">
+    
+        <h1 class="h-primary center">OUR SERVICES </h1> 
+    <div id="services">
+        <div class="box">
+            <img src="img/pizza-removebg-preview.png" alt="">
+            <h2 class="h-secondary center">FOOD ORDERING</h2>
+            <p class="center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat atque dolores perferendis, repellat omnis libero recusandae repudiandae corporis quidem sunt!</p>
+        </div>
+        <div class="box">
+            <img src="img/deliveryboy-removebg-preview.png" alt="">
+            <h2 class="h-secondary center">FOOD DELIVERY</h2>
+            <p class="center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat atque dolores perferendis, repellat omnis libero recusandae repudiandae corporis quidem sunt!</p>
+        </div>
+        <div class="box">
+            <img src="img/food-removebg-preview.png" alt="">
+            <h2 class="h-secondary center">BULK ORDERING</h2>
+            <p class="center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat atque dolores perferendis, repellat omnis libero recusandae repudiandae corporis quidem sunt!</p>
+        </div>
+    </div> 
+    
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary center">SPONSORED BY</h1>
+        <div id="clients">
+            <div class="client-item">
+                <img src="img/zomatologo-removebg-preview.png" alt="">
+            </div>
+            <div class="client-item">
+                <img src="img/chaisutta-removebg-preview.png" alt="">
+            </div>
+            <div class="client-item">
+                <img src="img/zomatologo-removebg-preview.png" alt="">
+            </div>
+            <div class="client-item">
+                <img src="img/chaisutta-removebg-preview.png" alt="">
+            </div>
+            <div class="client-item">
+                <img src="img/zomatologo-removebg-preview.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="h-primary center">contact us</h1>
+        <div class="container">
+            <form class="row bg-light g-3" onsubmit="return validation()">
+                <h3>Login Form</h3>
+        
+                <div class="col-12">
+                  <label for="username" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="user">
+                  <span id="username" class="text-danger value"></span>
+                </div>
+        
+                <div class="col-12">
+                  <label for="inputPassword4" class="form-label">Password</label>
+                  <input type="text" class="form-control" id="Password">
+                  <span id="pass" class="text-danger value"></span>
+                </div>
+        
+                <div class="col-12">
+                  <label for="inputAddress" class="form-label">Confirm Password</label>
+                  <input type="text" class="form-control" id="confirm" >
+                  <span id="conpass" class="text-danger value"></span>
+                </div>
+        
+                <div class="col-12">
+                  <label for="inputAddress2" class="form-label">Mobile</label>
+                  <input type="text" class="form-control" id="Mobile">
+                  <span id="mobileno" class="text-danger value"></span>
+                </div>
+        
+                <div class="col-12">
+                    <label for="inputEmail4" class="form-label">Email</label>
+                    <input type="text" class="form-control" id="email">
+                    <span id="mail" class="text-danger value"></span>
+                </div>
+                <!-- <div class="col-12">
+                    <label for="inputEmail4" class="form-label"> course</label>
+                    <select id="selectcourse">
+                        <option>abc</option>
+                        <option>abcdss</option>
+                        <option>ef</option>
+                        <option>absdc</option>
+                    </select>
+                      <span id="course" class="text-danger value"></span>
+                </div> -->
+        
+                <div class="col-12">
+                <label for="" class="form-label">gender</label>
+                <input type="radio" name="gender" value="male">male
+                <input type="radio" name="gender" value="male">female
+                <span id="gen" class="text-danger value"></span>
+        
+                </div>
+                
+                <div class="col-12">
+                 <button type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+              </form>
+        
+           </div>
+    </section>
+    
+    <footer>
+        <div class="center">
+            copyright &copy; www.myonlinemeal.com. all rights reserved
+        </div>
+    </footer>
+    <script type="text/javascript">
+        function clearerror(){
+            var error = document.getElementsByClassName('value');
+            for(let item of error){
+                item.innerHTML = "";
+            }
+
+        }
+        
+        function validation(){
+            clearerror();
+            var user = document.getElementById('user').value;
+            var Pass = document.getElementById('Password').value;
+            var con = document.getElementById('confirm').value;
+            var mobile = document.getElementById('Mobile').value;
+            var email = document.getElementById('email').value;
+            var option = document.getElementById('selectcourse').value;
+            var gender = document.getElementsByName('gender');
+
+
+            if(user == ""){
+                document.getElementById('username').innerHTML = "**Please Fill Username!!";
+               return false;
+            }
+             
+            if((user.length<=2)||(user.length > 20)){
+                document.getElementById('username').innerHTML = "**User Length Must Be Between 2 To 20!!";
+                return false;
+            }
+
+            if(!isNaN(user)){
+                document.getElementById('username').innerHTML = "**Only Chracters Are Allowed!!";
+               return false;
+            }
+
+            
+            if(Pass == ""){
+ 
+                document.getElementById('pass').innerHTML = "**Please Fill  Password!!";
+                value =  false;
+            }
+
+            if(con == ""){
+                document.getElementById('conpass').innerHTML = "**Please Fill Password!!";
+                return false;
+            }
+
+            if(con!=Pass){
+                document.getElementById('conpass').innerHTML = "**Password Does Not Match!!";
+                return false;
+            }
+
+            if(mobile == ""){
+                document.getElementById('mobileno').innerHTML = "**Please Fill Mobile No.!!";
+                return false;
+            }
+
+            if(isNaN(mobile)){
+                document.getElementById('mobileno').innerHTML = "**Please Fill Valid Mobile No!!";
+                return false;
+            }
+         
+            if(email == ""){
+                document.getElementById('mail').innerHTML = "**Please Fill Email!!";
+                return false;
+            }
+
+            if(email.indexOf('@')<= 0){
+                document.getElementById('mail').innerHTML = "**Invalid Position Of @!!";
+                return false;
+            }
+            
+
+            if((email.charAt(email.length-4) != '.') && (email.charAt(email.length-3) != '.')){
+               document.getElementById('mail').innerHTML = "**Please Fill Valid Email!!";
+               return false;
+           }
+           if(option == "abc"){
+               document.getElementById('course').innerHTML="**please select!!";
+           }
+           if((gender[0].checked==false)&& (gender[1].checked==false)){
+               document.getElementById('gen').innerHTML = "**please select gender";
+               return false;
+           }
+
+         return true;
+        }
+    </script>
+</body>
+</html>
